@@ -7,5 +7,4 @@ The _.env_ file contains the parameters for the default Shadowsocks port, method
 - Default Shadowsocks Port: **8388** (TCP or UDP)
 - Default Shadowsocks Password: 126357
 
-ss://aes-256-cfb:126357@docker.underpass.cf:8388
-ss://aes-256-cfb:5ouMnqPyzseL@docker.underpass.cf:8388
+ss://aes-256-gcm:126357@195.201.100.122:8388
