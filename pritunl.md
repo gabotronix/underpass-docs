@@ -37,10 +37,22 @@ Add an OpenVPN server from `Servers > Add Server`. You'll then need to fill up t
 
 _Note:_
 
-`Port`: refers to the port that was defined from `PRITUNL_TCP` and `PRITUNL_UDP` in `/opt/underpass/.env`. It's `1194` by default.
+`Port`: refers to the port that was defined in `PRITUNL_TCP` and `PRITUNL_UDP` from `/opt/underpass/.env`. It's `1194` by default for both TCP and UDP ports.
 
 _Please also note that `Enable WireGuard` is not supported by Underpass_
   
 ***
+
+#### Adding Users and Download the OVPN Profile
+
+You can create users from the `Users` page. The only field required to create a user is the `username`. The `PIN` and `email address` are optional. Once a user is created, you'll be able to download its `ovpn` profile.
+
+The profile is contained in a `tar` archive, so make sure that you have the tool to extract the `ovpn` file from a `tar` file (7-zip or WinRAR).
+
+***
+
+#### VPN Clients
+
+You can use OpenVPN or the Pritunl client to connect to the Pritunl VPN Server. There is no Pritunl client On mobile, but the OpenVPN client can be used.
 
 _Download the Pritunl client: [https://client.pritunl.com/#install](https://client.pritunl.com/#install)_
