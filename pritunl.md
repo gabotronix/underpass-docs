@@ -23,9 +23,15 @@ You may also add your IPv6 if your VPS host provided you with one.
 
 Leave the rest of the settings to their defaults. Changing port `443`, for instance, may render Pritunl inaccessible.
 
+***
+
+#### Organizations
+
 The first thing to do after setting the admin user is to add an `Organization` in `Users > Add Organization`. An `Organization` is simply a name that you want for your group.
 
-_Group_ refers to the VPN servers that you will be creating later on. Pritunl allows you to create multiple TCP or UDP OpenVPN servers. You are only limited by your server resources. However, only 2 ports have been set for Underpass - 1 for TCP and another for UDP.
+_Group_ refers to the VPN servers that you will be creating later on. Pritunl allows you to create multiple TCP or UDP OpenVPN servers. You are only limited by how beefy your server is.
+
+However, only 2 ports have been set for this installation - 1 for TCP and another for UDP.
 
 Before you can start a VPN server, you'll be required to attach an `Organization` to it.
 
@@ -33,7 +39,7 @@ Before you can start a VPN server, you'll be required to attach an `Organization
 
 ***
 
-#### Adding an OpenVPN Server
+#### Creating an OpenVPN Server
 
 Add an OpenVPN server from `Servers > Add Server`. You'll then need to fill up the server settings. A tooltip will appear when you hover your mouse over an option.
 
