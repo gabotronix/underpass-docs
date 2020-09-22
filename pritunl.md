@@ -17,7 +17,11 @@ docker exec pritunl pritunl default-password
 
 #### Pritunl Settings:
 
-Once logged in to Pritunl, you will be asked to set a new admin username and password. Leave the rest of the settings to their defaults. Changing port `443`, for instance, may render Pritunl inaccessible.
+Once logged in to Pritunl, you will be asked to set a new admin username and password.
+
+You may also add your IPv6 if your VPS host provided you with one.
+
+Leave the rest of the settings to their defaults. Changing port `443`, for instance, may render Pritunl inaccessible.
 
 The first thing to do after setting the admin user is to add an `Organization` in `Users > Add Organization`. An `Organization` is simply a name that you want for your group.
 
