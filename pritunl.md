@@ -63,6 +63,6 @@ The profile is contained in a `tar` archive, so make sure that you have the tool
 
 #### VPN Clients
 
-You can use OpenVPN or the Pritunl client to connect to the Pritunl VPN Server. There is no Pritunl client On mobile, but the OpenVPN client can be used.
+You can use OpenVPN or the Pritunl client to connect to the Pritunl VPN Server. There is no Pritunl client on mobile, but the OpenVPN client is 100% compatible.
 
 _Download the Pritunl client: [https://client.pritunl.com/#install](https://client.pritunl.com/#install)_
