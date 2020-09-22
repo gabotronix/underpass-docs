@@ -1,5 +1,4 @@
 # underpass-docs
-Documentation for Underpass
 
 ### Initial Configuration
 
@@ -35,6 +34,8 @@ _Group_ refers to the VPN servers that you will be creating later on. Pritunl al
 Before you can start a VPN server, you'll be required to attach an `Organization` to it.
 
 ![pritunl_organization](https://user-images.githubusercontent.com/9207205/93812435-30a19580-fc84-11ea-9fa9-d9f59ac27aea.png)
+
+***
 
 #### Adding an OpenVPN Server
 
@@ -121,6 +122,8 @@ User creation can also be done from Portainer:
 ![dante_portainer_console](https://user-images.githubusercontent.com/9207205/93722750-9b42ca80-fbcb-11ea-8743-198959cbc53f.png)
 
 User records will persist even if the container is destroyed/deleted/removed.
+
+***
 
 #### Changing the SOCKS5 Port
 
@@ -243,8 +246,12 @@ Once the entry is added, you'll be able to access Pritunl using the subdomain, `
 
 If you want to remove the _Your connection is not private_ warning from your web browser, you can do so by going to `SSL Certificates > Add SSL Certificate`. It may take a couple of minutes to register your SSL certificate.
 
-
+![nginx_ssl_letsencrypt](https://user-images.githubusercontent.com/9207205/93936143-484a4e00-fd58-11ea-838f-3fe3c17edb99.png)
 
 Once you have the SSL Certificate listed, go back to `Hosts > Proxy Hosts`, edit your domain/subdomain by clicking on the three dots on the right. From the `Edit Proxy Host` window, go to the `SSL` tab and select the SSL certificate that was registered earlier.
 
+![nginx_proxy_ssl_pair](https://user-images.githubusercontent.com/9207205/93936363-abd47b80-fd58-11ea-9f96-35eb5371547b.png)
+
 You can also click on `Force SSL` to activate automatic https access. Finally, click on _Save_. You should now be able to access your domain/subdomain without the web browser warning message.
+
+***
