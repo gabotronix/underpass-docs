@@ -53,7 +53,7 @@ _Please also note that `Enable WireGuard` is not supported by Underpass_
   
 ***
 
-#### Adding Users and Download the OVPN Profile
+#### Adding Users and Downloading the OVPN Profile
 
 You can create users from the `Users` page. The only field required to create a user is the `username`. The `PIN` and `email address` are optional. Once a user is created, you'll be able to download its `ovpn` profile.
 
