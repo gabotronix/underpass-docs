@@ -22,9 +22,9 @@ If you wish to create more users, simply copy-paste the entries below `users:`
 
 ***
 
-#### Changing OpenSSH Port
+#### Changing the OpenSSH Port
 
-You can change the port of OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port 2222. Once you're done editing `.env`, restart the container:
+You can change the port of OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port `2222`. Once you're done editing `.env`, restart the container:
 ```
 cd /opt/underpass
 docker-compose restart ssh
@@ -35,6 +35,8 @@ docker-compose restart ssh
 #### Using OpenSSH in HTTP Proxy Injector
 
 The OpenSSH server is usually paired with Squid in order to create a tunnel between your device and your Underpass server.
+
+**HTTP Proxy Injector on Windows 10**
 
 ![hpi_settings](https://user-images.githubusercontent.com/9207205/94207196-abbfb180-fef9-11ea-863b-4cc61a2e31a9.png)
 
