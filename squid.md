@@ -4,11 +4,13 @@
 
 #### Create Users for Squid:
 
+By default, Squid only allows connections from an authenticated user, or from an SSH session that originated from the same server as Squid.
+
 The **Squid configuration** files are located in `/opt/underpass/config/squid/`
 
 In the _squid_ folder, edit the `users` file using your preferred text editor and use a [_passwd-generator_](https://hostingcanada.org/htpasswd-generator/) to create your own user-password combination.
 
-From the passwd-generator homepage, input your desired username and password. For the `Mode`, select `Apache specific salted MD5`. Finally, click on Create .htpasswd file.
+From the passwd-generator homepage, input your desired username and password. For the `Mode`, select `Apache specific salted MD5`. Finally, click on the Create .htpasswd file button.
 
 ![squid_password_gen](https://user-images.githubusercontent.com/9207205/93942673-78e3b500-fd63-11ea-969f-ebfd3b880abd.png)
 
