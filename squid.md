@@ -20,6 +20,8 @@ cd /opt/underpass/
 docker-compose up -d --force-recreate squid
 ```
 
+***
+
 #### Changing the Squid Port
 
 You can change the port for Squid by changing the `http_port` number from `/opt/underpass/config/squid/squid.conf`
