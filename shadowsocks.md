@@ -1,6 +1,6 @@
 # Shadowsocks
 
-### Change Shadowsocks Password
+#### Changing Shadowsocks Password
 
 The Shadowsocks password is defined in `/opt/underpass/.env`
 
@@ -14,13 +14,23 @@ docker-compose up -d --force-recreate shadowsocks
 
 ***
 
+#### Changing the Shadowsocks Port
+
+The Shadowsocks ports are in `/opt/underpass/.env`. By default, the TCP and UDP ports for Shadowsocks are on `8388`. You can change `SHADOWSOCKS_TCP` and `SHADOWSOCKS_UDP` values to your desired port numbers. Recreate the container once done:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate shadowsocks
+```
+
+***
+
 _Download the Shadowsocks client from the [official site](https://shadowsocks.org/en/download/clients.html)_
 
 ***
 
-#### Shadowsocks Server Settings
+#### Shadowsocks Client Settings
 
-The first thing to do in Shadowsocks is to add a server.
+The first thing to do in the Shadowsocks client is to add a server.
 
 ![shadowsocks_server_settings](https://user-images.githubusercontent.com/9207205/94196774-71e5af80-fee7-11ea-8ebc-aff7898b2b5b.png)
 
@@ -36,7 +46,7 @@ Leave the rest of the settings to their defaults. Click `Apply` and `OK`.
 
 #### Connecting to the Shadowsocks Server
 
-The Shadowsocks icon will reside in the system tray on Windows 10. Simply open the tray and right click on the Shadowsocks icon. From the context menu, go to `System Proxy`and click on `Global`.
+The Shadowsocks icon resides in the system tray on Windows 10. Simply open the tray and right click on the Shadowsocks icon. From the context menu, go to `System Proxy`and click on `Global`.
 
 ![shadowsocks_client_global](https://user-images.githubusercontent.com/9207205/94197690-b6be1600-fee8-11ea-9515-a00336b0038f.png)
 
