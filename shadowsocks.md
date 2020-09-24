@@ -15,3 +15,31 @@ docker-compose restart shadowsocks
 ***
 
 _Download the Shadowsocks client from the [official site](https://shadowsocks.org/en/download/clients.html)_
+
+***
+
+#### Shadowsocks Server Settings
+
+The first thing to do in Shadowsocks is to add a server.
+
+![shadowsocks_server_settings](https://user-images.githubusercontent.com/9207205/94196774-71e5af80-fee7-11ea-8ebc-aff7898b2b5b.png)
+
+For the `Server IP`, input your server's public IP.
+
+For the `Server Port`, input 8388 (default), or the custom port that you assigned in `/opt/underpass/.env` for `SHADOWSOCKS_TCP`.
+
+Input your new Shadowsocks `Password` as well.
+
+For `Encryption`, select `aes-256-gcm` from the drop down. The encryption method is defined in `/opt/underpass/.env` under `SHADOWSOCKS_METHOD`.
+
+Leave the rest of the settings to their defaults. Click `Apply` and `OK`.
+
+#### Connecting to the Shadowsocks Server
+
+The Shadowsocks icon will reside in the system tray on Windows 10. Simply open the tray and right click on the Shadowsocks icon. From the context menu, go to `System Proxy`and click on `Global`.
+
+![shadowsocks_client_global](https://user-images.githubusercontent.com/9207205/94197690-b6be1600-fee8-11ea-9515-a00336b0038f.png)
+
+You'll know that you've successfully connected when the icon turns blue. It will also give you the server details when you hover over it.
+
+![shadowsocks_client_connected](https://user-images.githubusercontent.com/9207205/94197932-0f8dae80-fee9-11ea-842f-6a1779e54889.png)
