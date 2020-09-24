@@ -40,6 +40,10 @@ If you need to access a container's terminal, such as when creating a user for D
 
 ![portainer_container_console](https://user-images.githubusercontent.com/9207205/94193478-fd107680-fee2-11ea-9bc2-08f4e6f50fe6.png)
 
+***
+
+#### Container Details
+
 You can also click on the container name and access the Logs, Stats, and Console from there.
 
 ![portainer_container_details](https://user-images.githubusercontent.com/9207205/94193706-3fd24e80-fee3-11ea-81f6-cd3bcb58ba57.png)
