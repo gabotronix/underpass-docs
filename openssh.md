@@ -43,9 +43,9 @@ docker-compose up -d --force-recreate ssh
 
 The OpenSSH server is usually paired with Squid in order to create a tunnel between your device and your Underpass server.
 
-***
-
 _Download [HTTP Proxy Injector for Windows](https://github.com/a-dev1412/a-dev1412.github.io/releases/latest)_
+
+***
 
 ![hpi_settings](https://user-images.githubusercontent.com/9207205/94207196-abbfb180-fef9-11ea-863b-4cc61a2e31a9.png)
 
