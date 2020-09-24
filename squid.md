@@ -4,7 +4,7 @@
 
 #### Create Users for Squid:
 
-By default, Squid only allows connections from an authenticated user, or from an SSH session that originated from the same server as Squid.
+By default, Squid only allows connections from an authenticated user, or from an SSH session that originated from the same server.
 
 The **Squid configuration** files are located in `/opt/underpass/config/squid/`
 
