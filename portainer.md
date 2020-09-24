@@ -10,9 +10,9 @@ Set an admin password (please set an extremely strong [password](https://www.las
 
 ***
 
-#### Container List and Status
+#### Container List, State, and Quick Actions
 
-Once you're in the Portainer Dashboard, you'll want to go to `Containers` to check on the status.
+Once you're in the Portainer Dashboard, you'll want to go to `Containers` to check on their state.
 
 ![portainer_container_list_quick_actions](https://user-images.githubusercontent.com/9207205/94192321-5c6d8700-fee1-11ea-99c0-0a458c02997f.png)
 
