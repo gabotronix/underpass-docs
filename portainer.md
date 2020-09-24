@@ -50,4 +50,4 @@ For instance, if you create a `Server` or a `User` in the `Pritunl` web panel, t
 
 ![portainer_volumes](https://user-images.githubusercontent.com/9207205/94195431-93459c00-fee5-11ea-9041-bd32333333b3.png)
 
-The `Volumes` page also allows you to see the exact location of the volumes in the Docker host. If you want to backup your persistent storage, you can find them in `/var/lib/docker/volumes`.
+The `Volumes` page also allows you to see the exact location of the volumes on the Docker host. If you want to make a backup of your persistent storage, you can find them in `/var/lib/docker/volumes`.
