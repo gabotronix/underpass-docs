@@ -6,19 +6,20 @@
 
 Users for [OpenSSH Server](https://gitlab.com/vlasov-y/openssh-server) are created via a YAML file. The file is at `/opt/underpass/config/openssh/config.yml`
 
-`config.yml` already contains a sample user named, `underpass`
+`config.yml` already contains a couple of users as an example.
 
-You can replace it with a new name. For the password, generate it from [here](https://www.mkpasswd.net/?type=crypt-sha512):
+For security reasons, you need to create a new user for yourself and then remove the pre-made ones. For the password, generate it from [here](https://www.mkpasswd.net/?type=crypt-sha512):
 ```
 Password: your_desired_password
 Type: crypt-sha512
 ```
+![openssh_hash_password](https://user-images.githubusercontent.com/9207205/94208731-1faf8900-fefd-11ea-8ed3-2c0789176f9b.png)
 
 Click on the `Hash` button. The page will generate a hash which you can then copy to `config.yml`
 
 When pasting the hash in `password:`, please note that it is enclosed in single quotations `password: 'hash_here'`.
 
-If you wish to create more users, simply copy-paste the entries below `users:`
+If you wish to create more users, simply follow the format below `users:`
 
 ***
 
@@ -36,7 +37,7 @@ docker-compose restart ssh
 
 The OpenSSH server is usually paired with Squid in order to create a tunnel between your device and your Underpass server.
 
-**HTTP Proxy Injector on Windows 10**
+**[HTTP Proxy Injector for Windows 10](https://github.com/a-dev1412/a-dev1412.github.io/releases/latest)**
 
 ![hpi_settings](https://user-images.githubusercontent.com/9207205/94207196-abbfb180-fef9-11ea-863b-4cc61a2e31a9.png)
 
