@@ -43,7 +43,9 @@ docker-compose up -d --force-recreate ssh
 
 The OpenSSH server is usually paired with Squid in order to create a tunnel between your device and your Underpass server.
 
-**[HTTP Proxy Injector for Windows 10](https://github.com/a-dev1412/a-dev1412.github.io/releases/latest)**
+***
+
+_Download [HTTP Proxy Injector for Windows](https://github.com/a-dev1412/a-dev1412.github.io/releases/latest)_
 
 ![hpi_settings](https://user-images.githubusercontent.com/9207205/94207196-abbfb180-fef9-11ea-863b-4cc61a2e31a9.png)
 
@@ -53,6 +55,7 @@ From HTTP Proxy Injector, fill in the following settings:
 - Username: the username you set in `/opt/underpass/config/openssh/config.yml`
 - Password: the password you set in `/opt/underpass/config/openssh/config.yml` (_this is not the hash value, but the clear text password_)
 - Mode: PF System or PF Portable *
+- Tunnelier: Bitvise
 - Proxy:Port - the public IP address of your server and the port that you assigned to Squid (it's 3128 by default)
 - Start Tunnel: checked/marked x
 - Generator: `CONNECT [host_port] [protocol][crlf]Host: google.com[crlf]X-Online-Host: google.com[crlf]X-Forwarded-For: google.com[crlf]Connection: Keep-Alive[crlf][crlf]`
