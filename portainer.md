@@ -24,7 +24,7 @@ The `Quick Actions` column allows you to view the logs of a particular container
 
 #### Stats
 
-You can also view how much RAM, CPU, and disk space a particular container is using.
+You can also view how much RAM and CPU a particular container is using.
 
 ![portainer_container_stats](https://user-images.githubusercontent.com/9207205/94192912-2d0b4a00-fee2-11ea-81ba-66aa23627e86.png)
 
