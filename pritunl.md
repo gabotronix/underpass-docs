@@ -57,7 +57,7 @@ _Please also note that `Enable WireGuard` is not supported by Underpass_
 
 You can create users from the `Users` page. The only field required to create a user is the `username`. The `PIN` and `email address` are optional. Once a user is created, you'll be able to download its `ovpn` profile.
 
-The profile is contained in a `tar` archive, so make sure that you have the tool to extract the `ovpn` file from a `tar` file (7-zip or WinRAR).
+The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip or WinRAR).
 
 ***
 
