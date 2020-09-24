@@ -16,17 +16,20 @@ Once you're in the Portainer Dashboard, you'll want to go to `Containers` to che
 
 ![portainer_container_list_quick_actions](https://user-images.githubusercontent.com/9207205/94192321-5c6d8700-fee1-11ea-99c0-0a458c02997f.png)
 
-**Logs**
+#### Logs
+
 The `Quick Actions` column allows you to view the logs of a particular container/service in realtime.
 
 ![portainer_container_logs](https://user-images.githubusercontent.com/9207205/94192701-e4539100-fee1-11ea-8d4f-dfe67e5fd19e.png)
 
-**Stats**
+#### Stats
+
 You can also view how much RAM, CPU, and disk space a particular container is using.
 
 ![portainer_container_stats](https://user-images.githubusercontent.com/9207205/94192912-2d0b4a00-fee2-11ea-81ba-66aa23627e86.png)
 
-**Console**
+#### Console
+
 If you need to access a container's terminal, such as when creating a user for Dante, you can do so from the container console.
 
 ![portainer_container_console](https://user-images.githubusercontent.com/9207205/94193478-fd107680-fee2-11ea-9bc2-08f4e6f50fe6.png)
