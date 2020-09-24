@@ -21,14 +21,20 @@ When pasting the hash in `password:`, please note that it is enclosed in single 
 
 If you wish to create more users, simply follow the format below `users:`
 
+Once you're done creating users, recreate the container:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate ssh
+```
+
 ***
 
 #### Changing the OpenSSH Port
 
-You can change the port of OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port `2222`. Once you're done editing `.env`, restart the container:
+You can change the port of OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port `2222`. Once you're done editing `.env`, recreate the container:
 ```
 cd /opt/underpass
-docker-compose restart ssh
+docker-compose up -d --force-recreate ssh
 ```
 
 ***
