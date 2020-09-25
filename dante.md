@@ -11,6 +11,8 @@ If you wish to open your SOCKS5 service to the public, comment out the line in `
 #socksmethod: username
 ```
 
+_Please note that you might get your server in trouble if you open your SOCKS5 proxy service to anyone._
+
 ***
 
 #### Create Users for Dante SOCKS:
