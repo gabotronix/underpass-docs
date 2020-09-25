@@ -1,6 +1,6 @@
 # Wireguard
 
-#### Wireguard Usage:
+#### Wireguard Usage and Configuration:
 
 By default, Wireguard is configured to have 1 peer that can be used by multiple users and devices at the same time. If you wish to configure more than one peer, edit `WIREGUARD_PEERS=1` from `/opt/underpass/.env` and change the number as desired. Recreate the container afterwards:
 ```
@@ -28,6 +28,12 @@ PublicKey = 2sv1xXxpXDn8Fmyhb6QNQxxXcl3PLmMj18qXxXNlnxx=
 Endpoint = 1xx.2xxx.1xx.1xx:51820
 AllowedIPs = 0.0.0.0/0, ::/0
 ```
+![wireguard_client_settings](https://user-images.githubusercontent.com/9207205/94211972-7620c580-ff05-11ea-861e-1c6cd20466f1.png)
+
+***
+
+#### Wireguard QR Code for Mobile
+
 You can also retrieve the peer's QR Code from the Wireguard server so that you can easily pair it with your mobile device's Wireguard client. From SSH, issue the command below:
 ```
 docker exec wireguard /app/show-peer 1
