@@ -52,3 +52,8 @@ By default, Wireguard uses port 51820 UDP. You can change the port by changing `
 cd /opt/underpass
 docker-compose up -d --force-recreate wireguard
 ```
+
+Please note that recreating the wireguard container may also change its peer configuration. Retrieve the new config by issuing the command:
+```
+docker exec wireguard cat /config/peer1/peer1.conf
+```
