@@ -111,14 +111,17 @@ Changing ports also means that your old `ovpn` files won't work anymore. You'll 
 
 ***
 
-#### Pritunl VPN and the Squid Configuration
+#### OpenVPN and the Squid Configuration
 
-Squid allows the OpenVPN TCP port to connect to it via the `http-proxy` and `http-proxy-user-pass` directive in the `ovpn` config.
+Squid allows the OpenVPN TCP port to connect to it via the `http-proxy` and `http-proxy-user-pass` directives in the `ovpn` config.
 
-In `/opt/underpass/config/squid/squid.conf`, you'll have to replace the default OpenVPN TCP port `1194` with the new port number that you assigned to `PRITUNL_TCP`. Issue the command below from your SSH terminal:
+If you changed the port number in `PRITUNL_TCP` from `/opt/underpass/.env`, then you'll have to change the OpenVPN port number in `squid.conf` too.
+
+Issue the command below from your SSH terminal in order to do that:
 ```
 sed -i 's|1194|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
 ```
+
 Where `YOUR_SSH_PORT` is your new port number for OpenVPN TCP.
 
 Once done, recreate the `pritunl container`:
