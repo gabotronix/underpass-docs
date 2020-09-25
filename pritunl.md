@@ -77,7 +77,7 @@ Once a user is created, you'll be able to download its `ovpn` profile. The profi
 
 #### Changing OpenVPN Ports
 
-By default, both OpenVPN servers listen on port `1194 TCP` and `1194 UDP`. You can change them to your desired port numbers by editing `/opt/underpass/.env`
+By default, both OpenVPN servers listen on port `1194 TCP` or `1194 UDP`. You can change them to your desired port numbers by editing `/opt/underpass/.env`
 ```
 PRITUNL_TCP=1194
 PRITUNL_UDP=1194
