@@ -21,7 +21,7 @@ Once logged in to Pritunl, you will be asked to set a new admin username and pas
 
 You may also add your IPv6 if your VPS host provided you with one.
 
-Leave the rest of the settings to their defaults. Changing port `443`, for instance, may render Pritunl inaccessible.
+Leave the rest of the settings to their defaults and click on `Save`. Changing port `443`, for instance, may render Pritunl inaccessible.
 
 ![pritunl_admin_settings](https://user-images.githubusercontent.com/9207205/94319475-49c88000-ffbd-11ea-87d5-f1d38575276f.png)
 
@@ -57,11 +57,11 @@ _Please also note that `Enable WireGuard` is not supported by Underpass_
 
 #### Adding Users and Downloading the OVPN Profile
 
-You can create users from the `Users` page. The only field required to create a user is the `username`. The `PIN` and `email address` are optional. Once a user is created, you'll be able to download its `ovpn` profile.
+You can create users from the `Users` page. The only fields required to create a user are the `Name` and `Organization`. The `Pin` and `Email` are optional.
 
 ![pritunl_add_users](https://user-images.githubusercontent.com/9207205/94319759-ee4ac200-ffbd-11ea-8805-448316d8b2df.png)
 
-The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip, WinRAR, etc).
+Once a user is created, you'll be able to download its `ovpn` profile. The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip, WinRAR, etc).
 
 ![pritunl_profile_download](https://user-images.githubusercontent.com/9207205/94319861-25b96e80-ffbe-11ea-8548-3e2ba8debf0b.png)
 
