@@ -61,8 +61,10 @@ Dante SOCKS5 allows OpenVPN to connect to it via the `socks-proxy` proxy directi
 
 A sample [ovpn configuration file](https://github.com/gabotronix/underpass/blob/master/config/openvpn/sample_config.ovpn) is provided in `/opt/underpass/config/openvpn/sample_config.ovpn`:
 ```
-socks-proxy ip_of_server 1080 socks.txt
+socks-proxy ip_of_server socks5_port socks.txt
 ```
+
+Where `ip_of_server` is the public IP address of your server and `socks5_port` is the port that was set in `/opt/underpass/config/dante/sockd.conf`. By default, it's port `1080` TCP.
 
 The username and password must be placed in a text file that's in the same folder as the `ovpn` configuration file.
 
