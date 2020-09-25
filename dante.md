@@ -66,9 +66,7 @@ The username and password must be placed in a text file that's in the same folde
 
 In Windows, the OpenVPN configuration file is located in `C:\Users\Your_Username\OpenVPN\config`
 
-The file, `socks.txt` must contain the username and password (1 line for each) that you created from the `Dante container`.
-
-`socks.txt`
+Contents of `socks.txt`:
 ```
 SOCKS5 user
 SOCKS5 password
