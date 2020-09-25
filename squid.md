@@ -1,7 +1,5 @@
 # Squid
 
-### Initial Configuration
-
 #### Create Users for Squid:
 
 By default, Squid only allows connections from an authenticated user, or from an SSH session that originated from the same server.
@@ -16,7 +14,7 @@ From the passwd-generator homepage, input your desired username and password. Fo
 
 In the `users` file, remove the entry for `underpass` and replace it with your newly generated username-password combination.
 
-Any change to the squid configuration folder will require you to recreate the `squid` container. The SSH commands below will do just that:
+Any change to the squid configuration folder will require you to recreate the `squid container`. The SSH commands below will do just that:
 ```
 cd /opt/underpass/
 docker-compose up -d --force-recreate squid
@@ -37,7 +35,7 @@ cd /opt/underpass
 docker-compose up -d --force-recreate squid
 ```
 
-You will then have to open the new port from the Docker host. For instance, if you changed the Squid port from 3128 to 3888, you'll have to issue these commands as root from SSH:
+You will then have to open the new port from the Docker host. For instance, if you changed the Squid port from 3128 to 3888, you'll have to issue these commands from SSH as root:
 ```
 firewall-cmd --remove-service=squid --permanent
 firewall-cmd --zone=public --add-port=3888/tcp --permanent
