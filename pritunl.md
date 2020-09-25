@@ -101,7 +101,7 @@ You can then change the port from the Server Settings window. Start the server a
 
 ***
 
-#### Changing Ports and User Profiles
+#### Port Changes and User Profiles
 
 Changing ports also means that your old `ovpn` files won't work anymore. You'll have to download your new VPN profile from the `Users` panel.
 
