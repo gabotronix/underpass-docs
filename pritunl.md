@@ -73,9 +73,9 @@ Once a user is created, you'll be able to download its `ovpn` profile. The profi
 
 ***
 
-#### Changing Pritunl OpenVPN Ports
+#### Changing OpenVPN Ports
 
-By default, the Pritunl OpenVPN server listens on ports `1194 TCP` and `1194 UDP`. You can change them to different port numbers by editing `/opt/underpass/.env`"
+By default, both OpenVPN servers listen on port `1194 TCP` and `1194 UDP`. You can change them to your desired port numbers by editing `/opt/underpass/.env`
 ```
 PRITUNL_TCP=1194
 PRITUNL_UDP=1194
@@ -87,15 +87,21 @@ cd /opt/underpass
 docker-compose up -d --force-recreate pritunl
 ```
 
+***
+
 #### Changing Ports from the Pritunl Web Panel
 
-You'll need to change the ports from your Pritunl `Servers` panel as well. In order to do that, you have to stop the server and access the server settings by clicking on the VPN server's name.
+If you changed the `PRITUNL_TCP` and `PRITUNL_UDP` port numbers, you'll need to change the ports from your Pritunl `Servers` panel as well. In order to do that, click on the `Stop Server` button and access the server settings by clicking on the VPN server's name.
 
 ![pritunl_server_edit](https://user-images.githubusercontent.com/9207205/94320022-7fba3400-ffbe-11ea-87a8-2d66f78d4ef0.png)
 
 You can then change the port from the Server Settings window. Start the server again after clicking on the `Save` button.
 
 ![pritunl_server_settings](https://user-images.githubusercontent.com/9207205/94320329-4209db00-ffbf-11ea-873c-b9ac57d7a50f.png)
+
+***
+
+#### Changing Ports and User Profiles
 
 Changing ports also means that your old `ovpn` files won't work anymore. You'll have to download your new VPN profile from the `Users` panel.
 
