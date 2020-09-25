@@ -37,7 +37,7 @@ cd /opt/underpass
 docker-compose up -d --force-recreate ssh
 ```
 
-#### OpenSSH Port and Squid
+#### OpenSSH Port and the Squid Configuration
 
 You'll also have to change the Squid configuration after changing the OpenSSH port.
 
