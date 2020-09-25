@@ -19,6 +19,8 @@ Pritunl will then ask you to issue a command from SSH in order to retrieve the a
 docker exec pritunl pritunl default-password
 ```
 
+![pritunl_admin_password](https://user-images.githubusercontent.com/9207205/94321820-54861380-ffc3-11ea-86f2-b720ad3575b2.png)
+
 ***
 
 #### Pritunl Settings:
