@@ -122,7 +122,7 @@ Issue the command below from your SSH terminal in order to do that:
 sed -i 's|1194|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
 ```
 
-Where `YOUR_SSH_PORT` is your new port number for OpenVPN TCP.
+Where `YOUR_SSH_PORT` is your new port number that you assigned to `PRITUNL_TCP`.
 
 Once done, recreate the `pritunl container`:
 ```
