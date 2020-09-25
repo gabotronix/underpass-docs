@@ -17,7 +17,7 @@ Type: crypt-sha512
 
 Click on the `Hash` button. The page will generate a hash which you can then copy to `config.yml`
 
-When pasting the hash in `password:`, please note that it is enclosed in single quotations (`'password hash here'`):
+When pasting the hash in `password:`, please note that it is enclosed in single quotations (`'password hash here'`)
 ```
 users:  
   # default user
