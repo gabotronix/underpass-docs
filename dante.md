@@ -70,6 +70,6 @@ The file, `socks.txt` must contain the username and password (1 line for each) t
 
 `socks.txt`
 ```
-username
-password
+SOCKS5 user
+SOCKS5 password
 ```
