@@ -21,9 +21,14 @@ docker exec -it dante adduser -s /sbin/nologin username
 ```
 Where: `username` is the name of the user that you want to add. You will then be asked to input a password.
 
-User creation can also be done from Portainer:
+User creation can also be done from Portainer by typing the command below:
+```
+adduser -s /sbin/nologin username
+```
 
 ![dante_portainer_console](https://user-images.githubusercontent.com/9207205/93722750-9b42ca80-fbcb-11ea-8743-198959cbc53f.png)
+
+In the image above the name of the user that will be created created is `user1`.
 
 User records will persist even if the Dante container is destroyed/deleted/removed.
 
