@@ -37,6 +37,22 @@ cd /opt/underpass
 docker-compose up -d --force-recreate ssh
 ```
 
+#### OpenSSH Port and Squid
+
+You'll also have to change the Squid configuration after changing the OpenSSH port.
+
+Issue this command from your SSH terminal:
+```
+sed -i 's|2222|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
+```
+Simply replace `YOUR_SSH_PORT` with the new port number that you assigned to OpenSSH.
+
+Then, recreate the `squid container`:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate squid
+```
+
 ***
 
 #### Using OpenSSH in HTTP Proxy Injector
