@@ -2,13 +2,23 @@
 
 ### Initial Configuration
 
-The **Dante SOCKS configuration file** is located at `/opt/underpass/config/dante/sockd.conf`
+The Dante SOCKS configuration file is located at `/opt/underpass/config/dante/sockd.conf`
 
-By default, it requires authentication to be able to successfully connect to the SOCKS5 port 1080.
+By default, Dante requires authentication to be able to successfully connect to SOCKS5 port 1080.
 
 If you wish to open your SOCKS5 service to the public, comment out the line in `sockd.conf` that's inside the `socks pass {}` directive: 
 ```
-#socksmethod: username
+socks pass {
+    from: 0.0.0.0/0 to: 0.0.0.0/0
+    #socksmethod: username
+    log: error
+} 
+```
+
+You'll then have to recreate the `dante container`:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate dante
 ```
 
 _Please note that you might get your server in trouble if you open your SOCKS5 proxy service to anyone._
