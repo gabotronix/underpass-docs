@@ -67,7 +67,7 @@ _Download [HTTP Proxy Injector for Windows](https://github.com/a-dev1412/a-dev14
 
 From HTTP Proxy Injector, fill in the following settings:
 - Host: the public IP address of your server
-- Port: 2222 (or the port you set in )
+- Port: 2222 (or the port you set in `SSH_PORT` of `/opt/underpass/.env`)
 - Username: the username you set in `/opt/underpass/config/openssh/config.yml`
 - Password: the password you set in `/opt/underpass/config/openssh/config.yml` (_this is not the hash value, but the clear text password_)
 - Mode: PF System or PF Portable *
