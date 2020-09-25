@@ -10,7 +10,7 @@ The page will show a notification like `Your connection is not private`. This is
 
 ***
 
-#### Retrieving the Admin Credentials
+#### Retrieving the Pritunl Admin Credentials
 
 Pritunl will then ask you to issue a command from SSH in order to retrieve the admin password. Issue the command below:
 
