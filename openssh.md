@@ -6,7 +6,9 @@ Users for [OpenSSH Server](https://gitlab.com/vlasov-y/openssh-server) are creat
 
 `config.yml` already contains a couple of users as an example.
 
-For security reasons, you need to create a new user for yourself and then remove the pre-made ones. For the password, generate it from [here](https://www.mkpasswd.net/?type=crypt-sha512):
+For security reasons, you need to create a new user for yourself, and then remove the pre-made ones.
+
+Generate your password from [here](https://www.mkpasswd.net/?type=crypt-sha512):
 ```
 Password: your_desired_password
 Type: crypt-sha512
@@ -15,14 +17,22 @@ Type: crypt-sha512
 
 Click on the `Hash` button. The page will generate a hash which you can then copy to `config.yml`
 
-When pasting the hash in `password:`, please note that it is enclosed in single quotations
+When pasting the hash in `password:`, please note that it is enclosed in single quotations (`'password hash here'`):
 ```
-password: 'hash_here'
+users:  
+  # default user
+  underpass:
+    password: '$6$G0AxXlTW1MEq/.kc$5BA0YJ.AOmSOEviUPuKlIcc8R5ur5.nEPgUlAZJSTku4PkwBQRVZJgkBprgVQLZu8d8MTPPSwl/kUEpmNcQQ7/'
+    shell: /bin/false
+
+  user2:
+    password: '$6$QWnP50MDsD9Rg1.q$YWht713.AOCu4SLT5sh.m1a2ou2YFGP/Sp/Ig5rPFW36/gpPmR68pKV0d5Oifwjh3Tu8YwqTXBTXb1zcbW4XZ0'
+    shell: /bin/false
 ```
 
 If you wish to create more users, simply follow the format below `users:`
 
-Once you're done creating users, recreate the container:
+Recreate the container once done:
 ```
 cd /opt/underpass
 docker-compose up -d --force-recreate ssh
