@@ -57,7 +57,7 @@ firewall-cmd --reload
 
 #### Using SOCKS5 in OpenVPN
 
-The SOCKS5 allows OpenVPN to connect to it via the `socks-proxy` proxy directive in the `ovpn` config.
+Dante SOCKS5 allows OpenVPN to connect to it via the `socks-proxy` proxy directive in the `ovpn` config.
 
 A sample [ovpn configuration file](https://github.com/gabotronix/underpass/blob/master/config/openvpn/sample_config.ovpn) is provided in `/opt/underpass/config/openvpn/sample_config.ovpn`:
 ```
