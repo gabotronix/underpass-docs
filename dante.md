@@ -2,7 +2,7 @@
 
 ### Initial Configuration
 
-The **Dante SOCKS configuration** is located at `/opt/underpass/config/dante/sockd.conf`
+The **Dante SOCKS configuration file** is located at `/opt/underpass/config/dante/sockd.conf`
 
 By default, it requires authentication to be able to successfully connect to the SOCKS5 port 1080.
 
