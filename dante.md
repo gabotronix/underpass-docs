@@ -40,9 +40,9 @@ adduser -s /sbin/nologin username
 
 ![dante_portainer_console](https://user-images.githubusercontent.com/9207205/93722750-9b42ca80-fbcb-11ea-8743-198959cbc53f.png)
 
-In the image above the name of the user that will be created created is `user1`.
+From the image above, the name of the user that will be created created is `user1`.
 
-User records will persist even if the Dante container is destroyed/deleted/removed.
+User records will remain even if the Dante container is destroyed/deleted/removed.
 
 ***
 
