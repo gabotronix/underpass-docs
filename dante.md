@@ -54,3 +54,22 @@ firewall-cmd --reload
 ```
 
 ***
+
+#### Using SOCKS5 in OpenVPN
+
+The SOCKS5 allows OpenVPN to connect to it via the `socks-proxy` proxy directive in the `ovpn` config.
+```
+socks-proxy ip_of_server 1080 socks.txt
+```
+
+The username and password must be placed in a text file that's in the same folder as the `ovpn` configuration file.
+
+In Windows, the OpenVPN configuration file is located in `C:\Users\Your_Username\OpenVPN\config`
+
+The file, `socks.txt` must contain the username and password (1 line for each) that you created from the `Dante container`.
+
+`socks.txt`
+```
+username
+password
+```
