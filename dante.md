@@ -66,7 +66,7 @@ socks-proxy ip_of_server 1080 socks.txt
 
 The username and password must be placed in a text file that's in the same folder as the `ovpn` configuration file.
 
-In Windows, the OpenVPN configuration file is located in `C:\Users\Your_Username\OpenVPN\config`
+On Windows, the OpenVPN configuration file is located in `C:\Users\Your_Username\OpenVPN\config`
 
 Contents of `socks.txt`:
 ```
