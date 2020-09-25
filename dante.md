@@ -1,7 +1,5 @@
 # Dante SOCKS5 Proxy Server
 
-### Initial Configuration
-
 The Dante SOCKS configuration file is located at `/opt/underpass/config/dante/sockd.conf`
 
 By default, Dante requires authentication to be able to successfully connect to SOCKS5 port 1080. You won't be able to connect until you create a user.
