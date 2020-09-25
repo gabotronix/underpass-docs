@@ -23,6 +23,8 @@ You may also add your IPv6 if your VPS host provided you with one.
 
 Leave the rest of the settings to their defaults. Changing port `443`, for instance, may render Pritunl inaccessible.
 
+![pritunl_admin_settings](https://user-images.githubusercontent.com/9207205/94319475-49c88000-ffbd-11ea-87d5-f1d38575276f.png)
+
 ***
 
 #### Organizations
@@ -57,7 +59,59 @@ _Please also note that `Enable WireGuard` is not supported by Underpass_
 
 You can create users from the `Users` page. The only field required to create a user is the `username`. The `PIN` and `email address` are optional. Once a user is created, you'll be able to download its `ovpn` profile.
 
-The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip or WinRAR).
+![pritunl_add_users](https://user-images.githubusercontent.com/9207205/94319759-ee4ac200-ffbd-11ea-8805-448316d8b2df.png)
+
+The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip, WinRAR, etc).
+
+![pritunl_profile_download](https://user-images.githubusercontent.com/9207205/94319861-25b96e80-ffbe-11ea-8548-3e2ba8debf0b.png)
+
+***
+
+#### Changing Pritunl OpenVPN Ports
+
+By default, the Pritunl OpenVPN server listens on ports `1194 TCP` and `1194 UDP`. You can change them to different port numbers by editing `/opt/underpass/.env`"
+```
+PRITUNL_TCP=1194
+PRITUNL_UDP=1194
+```
+
+Recreate the `pritunl container` afterwards:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate pritunl
+```
+
+#### Changing Ports from the Pritunl Web Panel
+
+You'll need to change the ports from your Pritunl `Servers` panel as well. In order to do that, you have to stop the server and access the server settings by clicking on the VPN server's name.
+
+![pritunl_server_edit](https://user-images.githubusercontent.com/9207205/94320022-7fba3400-ffbe-11ea-87a8-2d66f78d4ef0.png)
+
+You can then change the port from the Server Settings window. Start the server again after clicking on the `Save` button.
+
+![pritunl_server_settings](https://user-images.githubusercontent.com/9207205/94320329-4209db00-ffbf-11ea-873c-b9ac57d7a50f.png)
+
+Changing ports also means that your old `ovpn` files won't work anymore. You'll have to download your new VPN profile from the `Users` panel.
+
+![pritunl_profile_download](https://user-images.githubusercontent.com/9207205/94319861-25b96e80-ffbe-11ea-8548-3e2ba8debf0b.png)
+
+***
+
+#### Pritunl VPN and the Squid Configuration
+
+Squid allows the OpenVPN TCP port to connect to it via the `http-proxy` and `http-proxy-user-pass` directive in the `ovpn` config.
+
+In `/opt/underpass/config/squid/squid.conf`, you'll have to replace the default OpenVPN TCP port `1194` with the new port number that you assigned to `PRITUNL_TCP`. Issue the command below from your SSH terminal:
+```
+sed -i 's|1194|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
+```
+Where `YOUR_SSH_PORT` is your new port number for OpenVPN TCP.
+
+Once done, recreate the `pritunl container`:
+```
+cd /opt/underpass
+docker-compose up -d --force-recreate pritunl
+```
 
 ***
 
