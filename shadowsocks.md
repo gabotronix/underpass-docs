@@ -1,6 +1,6 @@
 # Shadowsocks
 
-#### Changing Shadowsocks Password
+#### Changing the Shadowsocks Password
 
 The Shadowsocks password is defined in `/opt/underpass/.env`
 

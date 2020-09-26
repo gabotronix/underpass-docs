@@ -119,7 +119,7 @@ Changing ports also means that your old `ovpn` files won't work anymore. You'll 
 
 Squid allows the OpenVPN TCP port to connect to it via the `http-proxy` and `http-proxy-user-pass` directives in the `ovpn` config.
 
-If you changed the port number in `PRITUNL_TCP` from `/opt/underpass/.env`, then you also need to change the OpenVPN port number in `squid.conf`.
+If you changed the port number in `PRITUNL_TCP` from `/opt/underpass/.env`, then you will also need to change the OpenVPN port number in `squid.conf`.
 
 In order to do that, issue the command below from your SSH terminal:
 ```
