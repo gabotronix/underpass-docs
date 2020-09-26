@@ -93,7 +93,9 @@ docker-compose up -d --force-recreate pritunl
 
 #### Changing Ports from the Pritunl Web Panel
 
-If you changed the `PRITUNL_TCP` and `PRITUNL_UDP` port numbers, you'll need to change the ports from your Pritunl `Servers` panel as well. In order to do that, click on the `Stop Server` button and access the server settings by clicking on the VPN server's name.
+If you changed the `PRITUNL_TCP` and `PRITUNL_UDP` port numbers, you'll need to change the ports from your Pritunl `Servers` panel as well.
+
+In order to do that, click on the `Stop Server` button and access the server settings by clicking on the VPN server's name.
 
 ![pritunl_server_edit](https://user-images.githubusercontent.com/9207205/94320022-7fba3400-ffbe-11ea-87a8-2d66f78d4ef0.png)
 
@@ -115,9 +117,9 @@ Changing ports also means that your old `ovpn` files won't work anymore. You'll 
 
 Squid allows the OpenVPN TCP port to connect to it via the `http-proxy` and `http-proxy-user-pass` directives in the `ovpn` config.
 
-If you changed the port number in `PRITUNL_TCP` from `/opt/underpass/.env`, then you'll have to change the OpenVPN port number in `squid.conf` too.
+If you changed the port number in `PRITUNL_TCP` from `/opt/underpass/.env`, then you also need to change the OpenVPN port number in `squid.conf`.
 
-Issue the command below from your SSH terminal in order to do that:
+In order to do that, issue the command below from your SSH terminal:
 ```
 sed -i 's|1194|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
 ```
