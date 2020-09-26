@@ -69,7 +69,9 @@ You can create users from the `Users` page. The only fields required to create a
 
 ![pritunl_add_users](https://user-images.githubusercontent.com/9207205/94319759-ee4ac200-ffbd-11ea-8805-448316d8b2df.png)
 
-Once a user is created, you'll be able to download its `ovpn` profile. The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip, WinRAR, etc).
+After `User` creation, you'll be able to download its `ovpn` profile.
+
+The profile is contained in a `tar` archive, so make sure that you have a tool to extract the `ovpn` file from a `tar` file (7-zip, WinRAR, etc).
 
 ![pritunl_profile_download](https://user-images.githubusercontent.com/9207205/94319861-25b96e80-ffbe-11ea-8548-3e2ba8debf0b.png)
 
