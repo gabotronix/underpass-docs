@@ -30,7 +30,7 @@ users:
     shell: /bin/false
 ```
 
-If you wish to create more users, simply follow the format below `users:`
+If you wish to create more users, simply follow the format above.
 
 Recreate the container once done:
 ```
