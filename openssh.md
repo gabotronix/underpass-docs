@@ -1,6 +1,6 @@
 # Open-SSH Server
 
-#### Create Users for OpenSSH:
+#### Creating Users for OpenSSH:
 
 Users for [OpenSSH Server](https://gitlab.com/vlasov-y/openssh-server) are created via a YAML file. The file is at `/opt/underpass/config/openssh/config.yml`
 
