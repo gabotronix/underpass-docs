@@ -60,7 +60,7 @@ The `Images` page allows you to remove an unused Docker image, or upgrade an exi
 #### Volumes
 The `Volumes` page gives you a list of the persistent storage that the containers are using. Persistent storage means that the data is retained even after a container is removed or recreated.
 
-For instance, if you create a `Server` or a `User` from the Pritunl web panel, the data is stored in the `underpass_mongodb` volume. You can remove or delete the `pritunl container` all you want, but your login credentials, users, and VPN servers will remain intact. However, if you delete the `underpass_mongodb` volume, all your data is lost as well.
+For instance, if you create a `Server` or a `User` from the Pritunl web panel, the data is stored in the `underpass_mongodb` volume. You can remove or delete the `pritunl` or `mongodb` container all you want, but your login credentials, users, and VPN servers will remain intact. However, if you delete the `underpass_mongodb` volume, all your data is lost as well.
 
 ![portainer_volumes](https://user-images.githubusercontent.com/9207205/94195431-93459c00-fee5-11ea-9041-bd32333333b3.png)
 
