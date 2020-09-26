@@ -4,7 +4,7 @@
 
 The Shadowsocks password is defined in `/opt/underpass/.env`
 
-Please change the Shadowsocks password immediately in order to prevent unauthorized access. You can do so by editing `.env` using your preferred text editor and changing the value of `SHADOWSOCKS_PASSWORD`
+Please change the Shadowsocks [password](https://www.lastpass.com/password-generator) immediately in order to prevent unauthorized access. You can do so by editing `.env` using your preferred text editor and changing the value of `SHADOWSOCKS_PASSWORD`
 
 Please use a long alphanumeric password to avoid parsing errors (numbers and letters only).
 
