@@ -42,7 +42,9 @@ docker-compose up -d --force-recreate ssh
 
 #### Changing the OpenSSH Port
 
-You can change the port of OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port `2222`. Once you're done editing `.env`, recreate the container:
+You can change the port for OpenSSH by changing `SSH_PORT` in `/opt/underpass/.env`. By default, it's assigned to port `2222`.
+
+Recreate the container afterwards:
 ```
 cd /opt/underpass
 docker-compose up -d --force-recreate ssh
