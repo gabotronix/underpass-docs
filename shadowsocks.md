@@ -20,7 +20,7 @@ docker-compose up -d --force-recreate shadowsocks
 
 The Shadowsocks ports are in `/opt/underpass/.env`. By default, the TCP and UDP ports are listening on `8388`. You can change `SHADOWSOCKS_TCP` and `SHADOWSOCKS_UDP` values to your desired port numbers.
 
-Make sure to recreate the `shadowsocks container` once done:
+Make sure to recreate the `shadowsocks container` afterwards:
 ```
 cd /opt/underpass
 docker-compose up -d --force-recreate shadowsocks
