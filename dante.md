@@ -4,7 +4,7 @@ The Dante SOCKS configuration file is at `/opt/underpass/config/dante/sockd.conf
 
 By default, Dante requires authentication to be able to successfully connect to SOCKS5 port 1080. You won't be able to connect until you create a user.
 
-If you wish to open your SOCKS5 service to the public, comment out `socksmethod: username` in `sockd.conf` under the `socks pass {}` directive, like in the example below: 
+If you wish to open your SOCKS5 service to the public, and without authentication, comment out `socksmethod: username` in `sockd.conf` under the `socks pass {}` directive. See the the example below: 
 ```
 socks pass {
     from: 0.0.0.0/0 to: 0.0.0.0/0
