@@ -1,6 +1,6 @@
 # Squid
 
-#### Create Users for Squid:
+#### Creating Users for Squid:
 
 By default, Squid only allows connections from an authenticated user, or from an SSH session that originated from the same server.
 
