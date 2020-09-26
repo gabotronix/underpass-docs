@@ -25,9 +25,9 @@ docker exec pritunl pritunl default-password
 
 #### Pritunl Settings:
 
-Once logged in to Pritunl, you will be asked to set a new admin username and password.
+Once logged in to the Pritunl admin panel, you will be asked to set a new admin username and password.
 
-You may also add your IPv6 if your VPS host provided you with one.
+You can also add your IPv6 if your VPS host provided you with one.
 
 Leave the rest of the settings to their defaults and click on `Save`. Changing port `443`, for instance, may render Pritunl inaccessible.
 
