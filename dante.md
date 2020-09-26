@@ -33,7 +33,7 @@ Where: `username` is the name of the user that you want to add. You will then be
 
 #### Dante Console from Portainer
 
-User creation can also be done from Portainer. From the `dante` Console, the command to use is:
+User creation can also be done from Portainer. Go to the `dante` Console and connect using `sh`. Then, issue the command below:
 ```
 adduser -s /sbin/nologin username
 ```
