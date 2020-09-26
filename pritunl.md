@@ -14,7 +14,7 @@ The page will show a notification like `Your connection is not private`. This is
 
 ![pritunl_initial_setup](https://user-images.githubusercontent.com/9207205/93722506-e065fd00-fbc9-11ea-9e2f-8c249533c0d7.png)
 
-Pritunl will then ask you to issue a command from SSH in order to retrieve the admin password. Issue the command below:
+Pritunl will then ask you to issue a command from SSH so that you can retrieve the admin password. Use the command below in order to get the password:
 ```
 docker exec pritunl pritunl default-password
 ```
