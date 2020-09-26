@@ -23,7 +23,7 @@ _Please note that you might get your server in trouble if you open your SOCKS5 p
 
 ***
 
-#### Create Users for Dante SOCKS:
+#### Creating Users for Dante SOCKS:
 
 To create a SOCKS5 user, issue the command below from SSH:
 ```
