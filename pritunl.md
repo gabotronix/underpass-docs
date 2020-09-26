@@ -124,10 +124,10 @@ sed -i 's|1194|YOUR_SSH_PORT|' /opt/underpass/config/squid/squid.conf
 
 Where `YOUR_SSH_PORT` is the new port number that you assigned to `PRITUNL_TCP`.
 
-Once done, recreate the `pritunl container`:
+Once done, recreate the `squid container`:
 ```
 cd /opt/underpass
-docker-compose up -d --force-recreate pritunl
+docker-compose up -d --force-recreate squid
 ```
 
 ***
