@@ -28,9 +28,10 @@ PublicKey = 2sv1xXxpXDn8Fmyhb6QNQxxXcl3PLmMj18qXxXNlnxx=
 Endpoint = 1xx.2xxx.1xx.1xx:51820
 AllowedIPs = 0.0.0.0/0, ::/0
 ```
-![wireguard_client_settings](https://user-images.githubusercontent.com/9207205/94211972-7620c580-ff05-11ea-861e-1c6cd20466f1.png)
 
 `Endpoint = 1xx.2xxx.1xx.1xx:51820` refers to your server's public IP address and port assignment.
+
+![wireguard_client_settings](https://user-images.githubusercontent.com/9207205/94211972-7620c580-ff05-11ea-861e-1c6cd20466f1.png)
 
 ***
 
@@ -53,7 +54,7 @@ cd /opt/underpass
 docker-compose up -d --force-recreate wireguard
 ```
 
-Please note that recreating the wireguard container may also change its peer configuration. Retrieve the new config by issuing the command:
+Please note that recreating the wireguard container may also change its peer configuration. Retrieve the new config by issuing the command from SSH:
 ```
 docker exec wireguard cat /config/peer1/peer1.conf
 ```
