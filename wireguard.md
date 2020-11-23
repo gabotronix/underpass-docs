@@ -2,6 +2,8 @@
 
 #### Wireguard Usage and Configuration:
 
+_Note: On CentOS 7, the server needs to be rebooted so that the Wireguard kernel modules can be loaded properly._
+
 By default, Wireguard is configured to have 1 peer that can be used by multiple users and devices at the same time. If you wish to configure more than one peer, edit `WIREGUARD_PEERS=1` from `/opt/underpass/.env` and change the number as desired. Recreate the container afterwards:
 ```
 cd /opt/underpass
